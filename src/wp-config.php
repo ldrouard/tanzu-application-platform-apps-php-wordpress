@@ -20,16 +20,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', $_ENV['RDS_NAME'] );
+define( 'DB_NAME', $_SERVER['RDS_NAME'] );
 
 /** Database username */
-define( 'DB_USER', $_ENV['RDS_USER'] );
+define( 'DB_USER', $_SERVER['RDS_USER'] );
 
 /** Database password */
-define( 'DB_PASSWORD', $_ENV['RDS_PASS'] );
+define( 'DB_PASSWORD', $_SERVER['RDS_PASS'] );
 
 /** Database hostname */
-define( 'DB_HOST', $_ENV['RDS_HOST'] . ':' . $_SERVER['RDS_PORT'] );
+define( 'DB_HOST', $_SERVER['RDS_HOST'] . ':' . $_SERVER['RDS_PORT'] );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY', $_ENV['WP_AUTH_KEY'] );
-define( 'SECURE_AUTH_KEY', $_ENV['WP_SECURE_AUTH_KEY'] );
-define( 'LOGGED_IN_KEY', $_ENV['WP_LOGGED_IN_KEY'] );
-define( 'NONCE_KEY', $_ENV['WP_NONCE_KEY'] );
-define( 'AUTH_SALT', $_ENV['WP_AUTH_SALT'] );
-define( 'SECURE_AUTH_SALT', $_ENV['WP_SECURE_AUTH_SALT'] );
-define( 'LOGGED_IN_SALT', $_ENV['WP_LOGGED_IN_SALT'] );
-define( 'NONCE_SALT', $_ENV['WP_NONCE_SALT'] );
+define( 'AUTH_KEY', $_SERVER['WP_AUTH_KEY'] );
+define( 'SECURE_AUTH_KEY', $_SERVER['WP_SECURE_AUTH_KEY'] );
+define( 'LOGGED_IN_KEY', $_SERVER['WP_LOGGED_IN_KEY'] );
+define( 'NONCE_KEY', $_SERVER['WP_NONCE_KEY'] );
+define( 'AUTH_SALT', $_SERVER['WP_AUTH_SALT'] );
+define( 'SECURE_AUTH_SALT', $_SERVER['WP_SECURE_AUTH_SALT'] );
+define( 'LOGGED_IN_SALT', $_SERVER['WP_LOGGED_IN_SALT'] );
+define( 'NONCE_SALT', $_SERVER['WP_NONCE_SALT'] );
 
 /**#@-*/
 
