@@ -83,7 +83,11 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+# Disable the Plugin and Theme File Editor
+define( 'DISALLOW_FILE_EDIT', true );
 
+# Disable WordPress Auto Updates
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
 /* That's all, stop editing! Happy publishing. */
 
