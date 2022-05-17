@@ -8093,13 +8093,8 @@ function WelcomeGuide() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/editor/global-styles-renderer.js
 /**
- * External dependencies
- */
-
-/**
  * WordPress dependencies
  */
-
 
 
 /**
@@ -8122,12 +8117,14 @@ function useGlobalStylesRenderer() {
     updateSettings
   } = Object(external_wp_data_["useDispatch"])(store);
   Object(external_wp_element_["useEffect"])(() => {
+    var _currentStoreSettings;
+
     if (!styles || !settings) {
       return;
     }
 
     const currentStoreSettings = getSettings();
-    const nonGlobalStyles = Object(external_lodash_["filter"])(currentStoreSettings.styles, style => !style.isGlobalStyles);
+    const nonGlobalStyles = currentStoreSettings === null || currentStoreSettings === void 0 ? void 0 : (_currentStoreSettings = currentStoreSettings.styles) === null || _currentStoreSettings === void 0 ? void 0 : _currentStoreSettings.filter(style => !style.isGlobalStyles);
     updateSettings({ ...currentStoreSettings,
       styles: [...nonGlobalStyles, ...styles],
       __experimentalFeatures: settings
@@ -9255,7 +9252,6 @@ function AddedBy(_ref6) {
 
 
 
-
 /**
  * Internal dependencies
  */
@@ -9333,7 +9329,7 @@ function Table(_ref) {
           postId: template.id,
           postType: template.type
         }
-      }, Object(external_wp_htmlEntities_["decodeEntities"])(((_template$title = template.title) === null || _template$title === void 0 ? void 0 : _template$title.rendered) || template.slug))), template.description), Object(external_wp_element_["createElement"])("td", {
+      }, ((_template$title = template.title) === null || _template$title === void 0 ? void 0 : _template$title.rendered) || template.slug)), template.description), Object(external_wp_element_["createElement"])("td", {
         className: "edit-site-list-table-column",
         role: "cell"
       }, Object(external_wp_element_["createElement"])(AddedBy, {
