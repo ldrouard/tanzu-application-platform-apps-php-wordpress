@@ -9,7 +9,6 @@ metadata:
   tags:
     - php
     - orangedemos
-  system: default
   links:
     - url: https://wordpress.org/
       title: WordPress Homepage
