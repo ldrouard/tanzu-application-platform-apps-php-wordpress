@@ -27,4 +27,4 @@ spec:
   owner: odemo-team-alpha
   system: odemo-system-orange
   dependsOn:
-    - mariadb-component
+    - component:mariadb-component
