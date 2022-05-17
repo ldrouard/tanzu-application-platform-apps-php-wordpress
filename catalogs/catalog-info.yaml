@@ -1,0 +1,13 @@
+# Docs Descriptor Format of Catalog Entities:
+#   https://backstage.io/docs/features/software-catalog/descriptor-format
+
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: go-places-catalog-info
+  description: Catalog for WordPress
+#  annotations:
+#    'backstage.io/techdocs-ref': dir:.
+spec:
+  targets:
+    - ./components/wordpress.yaml

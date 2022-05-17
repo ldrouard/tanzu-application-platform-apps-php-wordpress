@@ -1,0 +1,28 @@
+# Docs Descriptor Format of Catalog Entities:
+#   https://backstage.io/docs/features/software-catalog/descriptor-format
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-fpaas-php-web-wordpress
+  description: WordPress Demo
+  tags:
+    - php
+    - web
+    - gitlab
+  system: default
+  links:
+    # Icons from
+    - url: https://cloud.orange-business.com/
+      title: Orange Cloud for Business
+      icon: cloud
+    - url: https://drouard.eu
+      title: Personal Website
+      icon: home
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=demo-fpaas-php-web-wordpress'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: odemo-team-alpha
+  system: odemo-system-orange
