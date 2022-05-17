@@ -26,4 +26,5 @@ spec:
   lifecycle: production
   owner: odemo-team-alpha
   system: odemo-system-orange
-  dependsOn: mariadb-component
+  dependsOn:
+    - mariadb-component
