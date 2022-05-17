@@ -16,13 +16,14 @@ metadata:
     - url: https://cloud.orange-business.com/
       title: Orange Cloud for Business
       icon: cloud
-    - url: https://drouard.eu
-      title: Personal Website
+    - url: https://wordpress.org/
+      title: WordPress Homepage
       icon: home
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=demo-fpaas-php-web-wordpress'
 spec:
-  type: service
-  lifecycle: experimental
+  type: website
+  lifecycle: production
   owner: odemo-team-alpha
   system: odemo-system-orange
+  dependsOn: mariadb-component
