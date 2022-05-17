@@ -17,9 +17,10 @@ metadata:
       title: Orange Cloud for Business
       icon: catalog
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=demo-fpaas-php-web-wordpress'
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/part-of=demo-fpaas-php-web-wordpress'
 spec:
-  type: website
+  #type: website
+  type: service
   lifecycle: production
   owner: odemo-team-alpha
   system: odemo-orange
