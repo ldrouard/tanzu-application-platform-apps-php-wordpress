@@ -8,23 +8,21 @@ metadata:
   description: WordPress Demo
   tags:
     - php
-    - web
-    - gitlab
+    - orangedemos
   system: default
   links:
-    # Icons from
-    - url: https://cloud.orange-business.com/
-      title: Orange Cloud for Business
-      icon: cloud
     - url: https://wordpress.org/
       title: WordPress Homepage
-      icon: home
+      icon: docs
+    - url: https://cloud.orange-business.com/
+      title: Orange Cloud for Business
+      icon: catalog
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=demo-fpaas-php-web-wordpress'
 spec:
   type: website
   lifecycle: production
   owner: odemo-team-alpha
-  system: odemo-system-orange
+  system: odemo-orange
   dependsOn:
-    - component:mariadb-component
+    - component:mariadb
