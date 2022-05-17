@@ -4,7 +4,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: go-places-catalog-info
+  name: php-wordpress-catalog-info
   description: Catalog for WordPress
 #  annotations:
 #    'backstage.io/techdocs-ref': dir:.
