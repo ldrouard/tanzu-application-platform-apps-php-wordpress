@@ -8,6 +8,7 @@ metadata:
   description: WordPress Demo
   tags:
     - php
+    - website
     - orangedemos
   links:
     - url: https://wordpress.org/
