@@ -1,6 +1,6 @@
 <?php
   // /!\ Security Issues
-  //phpinfo(INFO_GENERAL);
+  phpinfo(INFO_GENERAL);
   //phpinfo(INFO_CONFIGURATION);
   //phpinfo(INFO_MODULES);
   
